@@ -19,10 +19,10 @@ def get_tot_object_count(client):
     return sum(obj_counts)    
 
 
-def get_object_count(client, c):
+def get_object_count(client, class_name):
     try:
-        c_count_resp = client.query.aggregate(c).with_fields('meta { count }').do()
-        return c_count_resp['data']['Aggregate'][c][0]['meta']['count']
+        c_count_resp = client.query.aggregate(class_name).with_fields('meta { count }').do()
+        return c_count_resp['data']['Aggregate'][class_name][0]['meta']['count']
     except:
         return 0
 
@@ -43,6 +43,15 @@ def get_preview_data(fpath):
             break
 
     return dlist
+
+
+def get_preview_df(fpath):
+    if fpath.suffix == '.json':
+        dlist = get_preview_data(fpath)      
+        df = pd.DataFrame(dlist)
+    else:
+        df = pd.read_csv(fpath)
+    return df[:100]
 
 
 def build_schema(client, class_obj_in):
