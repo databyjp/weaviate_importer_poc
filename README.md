@@ -4,6 +4,8 @@ This app is designed to demonstrate populating a Weaviate instance with data qui
 
 **Please note that this is a proof of concept (POC) only.** It is *NOT* intended for use in a production environment or anything resembling it. 
 
+![Image](import_poc_demo.gif)
+
 ### Installation
 - Clone the repo, and install dependencies using Poetry.
 - (Optional) Spin up a local instance of Weaviate, e.g. using the included docker-compose file
