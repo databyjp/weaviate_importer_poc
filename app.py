@@ -129,7 +129,7 @@ if client:
 
 
         demo_datasets = [
-            {"name": "Wine reviews", "description": "Wine reviews from [Kaggle](https://www.kaggle.com/datasets/zynicide/wine-reviews) containing 150k reviews.", "callback": import_csv_data, "args": [client, "data/winemag-data-130k-v2.csv", "WineReview", demo_max_objs], "disabled": False},
+            {"name": "Wine reviews", "description": "Wine reviews from [Kaggle](https://www.kaggle.com/datasets/zynicide/wine-reviews) containing 150k reviews.", "callback": import_csv_data, "args": [client, "demodata/winemag-data-130k-v2.csv", "WineReview", demo_max_objs], "disabled": False},
             {"name": "Yelp reviews", "description": "Placeholder: 7M Yelp Reviews.", "callback": import_csv_data, "args": [client, "data/winemag-data-130k-v2.csv", "YelpReview", demo_max_objs], "disabled": True},
             {"name": "Tiny ImageNet", "description": "Placholder: 100000 images of 200 classes.", "callback": import_csv_data, "args": [client, "data/winemag-data-130k-v2.csv", "ImageNetImage", demo_max_objs], "disabled": True},
         ]        

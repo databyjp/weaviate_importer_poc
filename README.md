@@ -38,7 +38,7 @@ Modify the **Weaviate datatypes** as required, as well as the **class name** to 
 Then, select the number of maximum data objects to be added, before clicking **add data**.
 
 #### Datasets used
-- The demo dataset import uses this [Wine Reviews](https://www.kaggle.com/datasets/zynicide/wine-reviews) dataset from Kaggle. The others are placeholders.
+- The demo dataset import uses this [Wine Reviews](https://www.kaggle.com/datasets/zynicide/wine-reviews) dataset from Kaggle. (Specifically `winemag-data-130k-v2.csv`. The other import boxes are placeholders.
 - The "import your own data" feature has been tested with:
     - [Fake/Real news dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) from Kaggle as `data/Fake.csv` and `data/True.csv`.
     - [Amazon Reviews - "5-Core" video game reviews subset](https://jmcauley.ucsd.edu/data/amazon/) - as `data/Video_Games_5.json`.
