@@ -7,6 +7,7 @@ This app is designed to demonstrate populating a Weaviate instance with data qui
 ![Image](import_poc_demo.gif)
 
 ### Installation
+- Make sure to have `git-lfs` enabled, as the demo data file(s) are saved using git-lfs.
 - Clone the repo, and install dependencies using Poetry.
 - (Optional) Spin up a local instance of Weaviate, e.g. using the included docker-compose file
 - From within the Poetry environment, run the app with `streamlit run app.py`
