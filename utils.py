@@ -29,10 +29,13 @@ def get_object_count(client, class_name):
 
 def parse_json(path):
     with open(path, 'r') as g:
-        line = g.readline()
-        while line:
-            yield json.loads(line)
-            line = g.readline()  
+        # line = g.readline()
+        # while line:
+        #     yield json.loads(line)
+        #     line = g.readline()  
+        data = json.loads(g.read())
+        print(data['documents'])
+        return data['documents']
 
 
 def get_preview_data(fpath):

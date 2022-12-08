@@ -1,5 +1,6 @@
 data/*.json
 data/*.csv
+!data/data.json
 .DS_Store
 .ipynb_checkpoints
 
