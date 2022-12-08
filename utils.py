@@ -15,7 +15,7 @@ def get_tot_object_count(client):
     schema = get_schema(client)
     class_names = [i['class'] for i in schema['classes']]
     obj_counts = [get_object_count(client, c) for c in class_names]
-    print(obj_counts)
+    # print(obj_counts)
     return sum(obj_counts)    
 
 
@@ -34,7 +34,6 @@ def parse_json(path):
         #     yield json.loads(line)
         #     line = g.readline()  
         data = json.loads(g.read())
-        print(data['documents'])
         return data['documents']
 
 
